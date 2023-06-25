@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhatti's GYM</title>
+    <style>
+        body{
+            font-family: cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 22px;
+        }
+        .mid{
+            width: 33%;
+            margin: 30px auto;
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 22px;
+        }
+        ul li{
+            display: inline-block;
+            margin-left: 15px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        .btn{
+            color: white;
+            font-family: cursive;
+            font-size: 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: transparent;
+            margin: 10px;
+        }
+        .im{
+            filter: invert(100%);
+            width: 80px;
+            height: 80px;
+            margin: 0px 28px;
+        }
+        .te{
+            font-weight: bold;
+            margin: 0px;
+        }
+        .fo{
+            position: absolute;
+            border-radius: 10px;
+            padding: 80px;
+            top: 250px;
+            left: 50px;
+            width: 30%;
+            border: 3px solid white;
+        }
+        .inp{
+            width: 80%;
+            border-radius: 10px;
+            margin: 5px 38px;
+            padding: 8px;
+            font-size: 18px;
+        }
+        .inp1{
+            font-size: 18px;
+            margin: 5px 38px;
+            width: 83%;
+            border-radius: 10px;
+            color: rgb(254, 254, 254);
+            font-family: cursive;
+            font-weight: bold;
+            text-align: center;
+            background-color: transparent;
+            border: 2px solid rgb(250, 250, 250);
+        }
+        .t1{
+            text-align: center;
+            font-size: 25px;
+        }
+        ::placeholder{
+            color: grey;
+            font-family: cursive;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--For logo-->
+        <div class="left">
+            <img src="img/gym.png" alt="This is logo" class="im">
+            <h3 class="te">Bhatti's Fitness</h3>
+        </div>
+        <!--For nav bar-->
+        <div class="mid">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Fitness Calculator</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--For buttons-->
+        <div class="right">
+            <input type="button" value="Call Us Now" class="btn">
+            <input type="button" value="Email Us" class="btn">
+        </div>
+    </header>
+    <div class="fo">
+        <form action="backend.php" class="form1">
+            <p class="t1">Join the best gym of Islamabad Now!</p>
+            <input type="text" name="name" class="inp" placeholder="Enter Your Name">
+            <input type="text" name="age" class="inp" placeholder="Enter Your Age">
+            <input type="text" name="gender" class="inp" placeholder="Enter Your Gender">
+            <input type="text" name="locality" class="inp" placeholder="Enter Your Locality">
+            <input type="submit" value="Submit" class="inp1">
+        </form>
+    </div>
+</body>
+</html>
